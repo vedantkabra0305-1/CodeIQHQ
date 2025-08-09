@@ -1,0 +1,124 @@
+import { Monitor, TabletSmartphone, LayoutTemplate, Instagram } from "lucide-react";
+
+export const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About Us" },
+  { href: "/services", label: "Services" },
+  { href: "/portfolio", label: "Portfolio" },
+  { href: "/contact", label: "Contact" },
+];
+
+export const services = [
+  {
+    icon: Monitor,
+    title: "Web Development",
+    description: "Building responsive, high-performance websites and web applications tailored to your business needs, from stunning landing pages to complex enterprise-level systems.",
+  },
+  {
+    icon: TabletSmartphone,
+    title: "Mobile App Development",
+    description: "Creating intuitive and engaging iOS and Android applications to connect with your users on the go. We build native and cross-platform apps that deliver seamless experiences.",
+  },
+  {
+    icon: LayoutTemplate,
+    title: "UI/UX Design",
+    description: "Designing beautiful, user-centric interfaces that provide a seamless and enjoyable experience. We focus on research, wireframing, and prototyping to create impactful designs.",
+  },
+];
+
+export const portfolioProjects = [
+  {
+    id: 1,
+    title: "Fintech Dashboard",
+    category: "Web",
+    image: "https://placehold.co/600x400.png",
+    dataAiHint: "modern dashboard",
+    description: "A comprehensive web platform for data analytics for a leading fintech company. We delivered a fully responsive, real-time dashboard that allows users to visualize complex financial data with ease. The project involved a custom design system to ensure brand consistency.",
+    tools: ["Next.js", "TypeScript", "Tailwind CSS", "Recharts", "Firebase"],
+    results: "Increased user engagement by 40% and reduced data processing time by half. The new platform has become an indispensable tool for their financial analysis team."
+  },
+  {
+    id: 2,
+    title: "ConnectApp",
+    category: "Mobile",
+    image: "https://placehold.co/600x400.png",
+    dataAiHint: "mobile app screen",
+    description: "A cross-platform mobile app for social networking. Features real-time chat, media sharing, and a sophisticated recommendation engine. Built to scale and handle thousands of concurrent users, providing a smooth and reliable social experience.",
+    tools: ["React Native", "Firebase", "Redux Toolkit", "Node.js"],
+    results: "Achieved 100,000+ downloads in the first three months on both App Store and Google Play, with an average rating of 4.8 stars."
+  },
+  {
+    id: 3,
+    title: "E-commerce Redesign",
+    category: "UI/UX",
+    image: "https://placehold.co/600x400.png",
+    dataAiHint: "website wireframe",
+    description: "Complete UI/UX redesign for a leading e-commerce brand. We conducted extensive user research to identify pain points and opportunities, resulting in a streamlined checkout process, improved product discovery, and a visually stunning interface.",
+    tools: ["Figma", "Adobe XD", "UserTesting.com", "Hotjar"],
+    results: "Resulted in a 25% increase in conversion rate and a significant drop in cart abandonment, directly impacting the client's bottom line."
+  },
+  {
+    id: 4,
+    title: "Headless CMS Store",
+    category: "Web",
+    image: "https://placehold.co/600x400.png",
+    dataAiHint: "e-commerce product page",
+    description: "An e-commerce store with a custom headless CMS integration for a high-end fashion retailer. This provided their marketing team with unparalleled flexibility to manage content while delivering a lightning-fast shopping experience to customers.",
+    tools: ["Shopify Plus", "Next.js", "GraphQL", "Contentful"],
+    results: "Online sales grew by 60% year-over-year, and page load times were cut by 70%, improving both user experience and SEO rankings."
+  }
+];
+
+export const testimonials = [
+  {
+    quote: "CodeIQ transformed our vision into a reality. Their team is professional, skilled, and incredibly easy to work with. The final product exceeded all our expectations.",
+    name: "Jane Doe",
+    title: "CEO, Innovate Inc.",
+    avatar: "https://placehold.co/100x100.png",
+    dataAiHint: "woman professional portrait",
+  },
+  {
+    quote: "The level of detail and commitment from CodeIQ was outstanding. They are true partners in development, not just a vendor.",
+    name: "John Smith",
+    title: "CTO, Tech Solutions",
+    avatar: "https://placehold.co/100x100.png",
+    dataAiHint: "man professional portrait",
+  },
+  {
+    quote: "From UI/UX to deployment, every step was handled with expertise. We couldn't be happier with our new mobile app.",
+    name: "Emily White",
+    title: "Product Manager, MobileFirst",
+    avatar: "https://placehold.co/100x100.png",
+    dataAiHint: "woman smiling",
+  },
+];
+
+export const contactDetails = {
+    email: "client.codeiq@gmail.com",
+    instagram: "https://www.instagram.com/CodeIQhq",
+    instagramHandle: "@CodeIQhq",
+    Icon: Instagram,
+};
+
+export const aboutContent = {
+  mission: "Our mission is to empower businesses by transforming their innovative ideas into robust, scalable, and user-friendly digital products. We are committed to excellence, collaboration, and driving success for our clients.",
+  values: "We believe in transparency, continuous learning, and building long-term partnerships. Our core values guide every project, ensuring we deliver not just code, but value and trust.",
+  story: "Founded in 2020 by a group of passionate developers and designers, CodeIQ started with a simple goal: to build software that makes a difference. Frustrated with the disconnect between client vision and developer execution, we set out to create an agency that prioritizes clear communication and a shared understanding of success. Today, we've helped dozens of startups and established companies launch products that users love.",
+};
+
+export const founders = [
+  {
+    name: "Alex Johnson",
+    title: "Co-Founder & CEO",
+    image: "https://placehold.co/400x400.png",
+    dataAiHint: "man ceo portrait",
+    bio: "With over 15 years in tech, Alex leads CodeIQ with a focus on strategy and client success. He's passionate about bridging the gap between business goals and technical execution."
+  },
+  {
+    name: "Samantha Lee",
+    title: "Co-Founder & CTO",
+    image: "https://placehold.co/400x400.png",
+    dataAiHint: "woman cto portrait",
+    bio: "Samantha is the technical powerhouse behind CodeIQ. She architects complex systems and leads our development team, ensuring we use the best technologies for the job."
+  }
+];
