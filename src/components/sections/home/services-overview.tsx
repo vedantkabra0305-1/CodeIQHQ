@@ -18,7 +18,7 @@ export default function ServicesOverview() {
           {services.map((service, index) => (
             <Card 
               key={service.title} 
-              className="animate-fade-up text-center shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+              className="group animate-fade-up text-center shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <CardHeader>
@@ -27,8 +27,10 @@ export default function ServicesOverview() {
                 </div>
                 <CardTitle className="font-headline text-2xl">{service.title}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{service.description}</p>
+              <CardContent className="h-24">
+                <p className="text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {service.description}
+                </p>
               </CardContent>
             </Card>
           ))}

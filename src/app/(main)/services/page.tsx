@@ -6,7 +6,7 @@ import { CheckCircle } from "lucide-react";
 const serviceFeatures = {
   "Web Development": ["Custom Web Applications", "E-commerce Solutions", "Content Management Systems", "API Development"],
   "Mobile App Development": ["iOS & Android Apps", "Cross-Platform Development", "App Maintenance & Support", "Push Notifications"],
-  "UI/UX Design": ["User Research & Personas", "Wireframing & Prototyping", "Usability Testing", "Design Systems"],
+  "AI Agents": ["Custom AI Agent Development", "LLM Integration", "Workflow Automation", "Intelligent Chatbots"],
 };
 
 export default function ServicesPage() {

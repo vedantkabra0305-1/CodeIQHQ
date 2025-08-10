@@ -1,4 +1,4 @@
-import { Monitor, TabletSmartphone, LayoutTemplate, Instagram } from "lucide-react";
+import { Monitor, TabletSmartphone, BrainCircuit, Instagram } from "lucide-react";
 
 export const navLinks = [
   { href: "/", label: "Home" },
@@ -20,9 +20,9 @@ export const services = [
     description: "Creating intuitive and engaging iOS and Android applications to connect with your users on the go. We build native and cross-platform apps that deliver seamless experiences.",
   },
   {
-    icon: LayoutTemplate,
-    title: "UI/UX Design",
-    description: "Designing beautiful, user-centric interfaces that provide a seamless and enjoyable experience. We focus on research, wireframing, and prototyping to create impactful designs.",
+    icon: BrainCircuit,
+    title: "AI Agents",
+    description: "Developing intelligent AI agents and integrating them into your business workflows to automate tasks, enhance user experiences, and drive efficiency.",
   },
 ];
 
