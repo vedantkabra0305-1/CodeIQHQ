@@ -116,7 +116,15 @@ export const contactDetails = {
 };
 
 export const aboutContent = {
-  mission: "Our mission is to empower businesses by transforming their innovative ideas into robust, scalable, and user-friendly digital products. We are committed to excellence, collaboration, and driving success for our clients.",
-  values: "We believe in transparency, continuous learning, and building long-term partnerships. Our core values guide every project, ensuring we deliver not just code, but value and trust.",
+  mission: [
+    "Empower businesses with robust, scalable, and user-friendly digital products.",
+    "Commit to excellence, collaboration, and driving client success.",
+    "Transform innovative ideas into tangible, market-ready solutions.",
+  ],
+  values: [
+    "Build long-term partnerships based on transparency and trust.",
+    "Foster a culture of continuous learning and improvement.",
+    "Deliver not just code, but measurable value and impact.",
+  ],
   story: "Founded in 2020 by a group of passionate developers and designers, CodeIQ started with a simple goal: to build software that makes a difference. Frustrated with the disconnect between client vision and developer execution, we set out to create an agency that prioritizes clear communication and a shared understanding of success. Today, we've helped dozens of startups and established companies launch products that users love.",
 };

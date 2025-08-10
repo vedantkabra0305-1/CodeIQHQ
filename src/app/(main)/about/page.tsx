@@ -1,7 +1,7 @@
 import { aboutContent } from "@/lib/constants";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import CtaSection from "@/components/sections/cta";
-import { BrainCircuit, HeartHandshake, Users } from "lucide-react";
+import { BrainCircuit, HeartHandshake, Users, CheckCircle } from "lucide-react";
 
 const quotients = [
   {
@@ -32,13 +32,13 @@ export default function AboutPage() {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">About CodeIQ</h1>
             <p className="mt-4 text-xl text-muted-foreground">
-              We&apos;re a team of passionate creators dedicated to building exceptional digital experiences.
+              We are a digital agency that crafts human-centered experiences by blending intelligent design with emotional connection.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-0">
+      <section className="py-0 pb-16 md:pb-24 lg:pb-32">
         <div className="container">
            <div className="grid md:grid-cols-3 gap-8">
             {quotients.map((item) => (
@@ -64,19 +64,41 @@ export default function AboutPage() {
 
       <section className="bg-secondary">
         <div className="container">
-          <div className="grid md:grid-cols-3 gap-12">
-            <div className="animate-fade-up [animation-delay:100ms]">
-              <h2 className="font-headline text-2xl font-bold mb-4 text-primary">Our Mission</h2>
-              <p className="text-muted-foreground">{aboutContent.mission}</p>
-            </div>
-            <div className="animate-fade-up [animation-delay:200ms]">
-              <h2 className="font-headline text-2xl font-bold mb-4 text-primary">Our Values</h2>
-              <p className="text-muted-foreground">{aboutContent.values}</p>
-            </div>
-            <div className="animate-fade-up [animation-delay:300ms]">
-              <h2 className="font-headline text-2xl font-bold mb-4 text-primary">Our Story</h2>
-              <p className="text-muted-foreground">{aboutContent.story}</p>
-            </div>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <Card className="animate-fade-up" style={{ animationDelay: '100ms' }}>
+              <CardHeader>
+                <CardTitle className="font-headline text-2xl font-bold mb-2 text-primary">Our Mission</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3">
+                  {aboutContent.mission.map((item, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
+                      <span className="text-muted-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="animate-fade-up" style={{ animationDelay: '200ms' }}>
+              <CardHeader>
+                <CardTitle className="font-headline text-2xl font-bold mb-2 text-primary">Our Values</CardTitle>
+              </CardHeader>
+              <CardContent>
+                 <ul className="space-y-3">
+                  {aboutContent.values.map((item, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
+                      <span className="text-muted-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="max-w-4xl mx-auto text-center animate-fade-up" style={{ animationDelay: '300ms' }}>
+            <h2 className="font-headline text-3xl font-bold mb-4 text-primary">Our Story</h2>
+            <p className="text-muted-foreground text-lg">{aboutContent.story}</p>
           </div>
         </div>
       </section>
