@@ -1,9 +1,17 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+"use client";
+
+import { useState } from "react";
 import { services } from "@/lib/constants";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { ArrowRight } from "lucide-react";
 
 export default function ServicesOverview() {
+  const [activeService, setActiveService] = useState(services[0]);
+
   return (
     <section className="bg-secondary">
       <div className="container">
@@ -14,32 +22,65 @@ export default function ServicesOverview() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <Card 
-              key={service.title} 
-              className="group animate-fade-up text-center shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
-              <CardHeader>
-                <div className="mx-auto bg-primary text-primary-foreground rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                  <service.icon className="w-8 h-8" />
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="flex flex-col gap-4">
+            {services.map((service) => (
+              <div
+                key={service.title}
+                onMouseEnter={() => setActiveService(service)}
+                className={cn(
+                  "p-6 rounded-lg cursor-pointer transition-all duration-300 border",
+                  activeService.title === service.title
+                    ? "bg-background shadow-lg border-primary"
+                    : "bg-background/50 border-transparent"
+                )}
+              >
+                <div className="flex items-center gap-4">
+                  <div className={cn(
+                    "w-12 h-12 rounded-lg flex items-center justify-center transition-colors",
+                     activeService.title === service.title ? "bg-primary text-primary-foreground" : "bg-muted text-primary"
+                  )}>
+                    <service.icon className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-headline text-xl font-bold text-primary">{service.title}</h3>
                 </div>
-                <CardTitle className="font-headline text-2xl">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="h-24">
-                <p className="text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  {service.description}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
+              </div>
+            ))}
+          </div>
+          
+          <div className="relative h-96">
+            {services.map((service) => (
+              <div
+                key={service.title}
+                className={cn(
+                  "absolute inset-0 transition-opacity duration-300 flex flex-col items-center justify-center text-center",
+                  activeService.title === service.title ? "opacity-100" : "opacity-0"
+                )}
+              >
+                <Image
+                  src={`https://placehold.co/600x400.png`}
+                  alt={service.title}
+                  width={600}
+                  height={400}
+                  className="rounded-lg shadow-xl mb-6 object-cover h-64 w-full"
+                  data-ai-hint={service.title.toLowerCase().replace(/ /g, '-')}
+                />
+                <p className="text-muted-foreground mb-4">{service.description}</p>
+                 <Button asChild variant="link" className="text-accent">
+                   <Link href="/services">
+                      Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                   </Link>
+                 </Button>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="text-center mt-12">
-          <Button asChild size="lg" variant="outline">
-            <Link href="/services">Learn More About Our Services</Link>
-          </Button>
-        </div>
+        
+        <div className="text-center mt-16">
+           <Button asChild size="lg">
+             <Link href="/services">Explore All Services</Link>
+           </Button>
+         </div>
       </div>
     </section>
   );
