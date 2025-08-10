@@ -35,7 +35,8 @@ export const portfolioProjects = [
     dataAiHint: "modern dashboard",
     description: "A comprehensive web platform for data analytics for a leading fintech company. We delivered a fully responsive, real-time dashboard that allows users to visualize complex financial data with ease. The project involved a custom design system to ensure brand consistency.",
     tools: ["Next.js", "TypeScript", "Tailwind CSS", "Recharts", "Firebase"],
-    results: "Increased user engagement by 40% and reduced data processing time by half. The new platform has become an indispensable tool for their financial analysis team."
+    results: "Increased user engagement by 40% and reduced data processing time by half. The new platform has become an indispensable tool for their financial analysis team.",
+    link: "#",
   },
   {
     id: 2,
@@ -45,7 +46,8 @@ export const portfolioProjects = [
     dataAiHint: "mobile app screen",
     description: "A cross-platform mobile app for social networking. Features real-time chat, media sharing, and a sophisticated recommendation engine. Built to scale and handle thousands of concurrent users, providing a smooth and reliable social experience.",
     tools: ["React Native", "Firebase", "Redux Toolkit", "Node.js"],
-    results: "Achieved 100,000+ downloads in the first three months on both App Store and Google Play, with an average rating of 4.8 stars."
+    results: "Achieved 100,000+ downloads in the first three months on both App Store and Google Play, with an average rating of 4.8 stars.",
+    link: "#",
   },
   {
     id: 3,
@@ -55,7 +57,8 @@ export const portfolioProjects = [
     dataAiHint: "website wireframe",
     description: "Complete UI/UX redesign for a leading e-commerce brand. We conducted extensive user research to identify pain points and opportunities, resulting in a streamlined checkout process, improved product discovery, and a visually stunning interface.",
     tools: ["Figma", "Adobe XD", "UserTesting.com", "Hotjar"],
-    results: "Resulted in a 25% increase in conversion rate and a significant drop in cart abandonment, directly impacting the client's bottom line."
+    results: "Resulted in a 25% increase in conversion rate and a significant drop in cart abandonment, directly impacting the client's bottom line.",
+    link: "https://redemp.in/",
   },
   {
     id: 4,
@@ -65,7 +68,8 @@ export const portfolioProjects = [
     dataAiHint: "e-commerce product page",
     description: "An e-commerce store with a custom headless CMS integration for a high-end fashion retailer. This provided their marketing team with unparalleled flexibility to manage content while delivering a lightning-fast shopping experience to customers.",
     tools: ["Shopify Plus", "Next.js", "GraphQL", "Contentful"],
-    results: "Online sales grew by 60% year-over-year, and page load times were cut by 70%, improving both user experience and SEO rankings."
+    results: "Online sales grew by 60% year-over-year, and page load times were cut by 70%, improving both user experience and SEO rankings.",
+    link: "#",
   }
 ];
 

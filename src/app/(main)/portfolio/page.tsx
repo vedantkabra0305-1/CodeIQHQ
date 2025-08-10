@@ -118,7 +118,7 @@ export default function PortfolioPage() {
                     <p className="text-muted-foreground">{selectedProject.results}</p>
                 </div>
                 <Button asChild>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href={selectedProject.link} target="_blank" rel="noopener noreferrer">
                     View Live Project <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
