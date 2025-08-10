@@ -62,14 +62,14 @@ export const portfolioProjects = [
   },
   {
     id: 4,
-    title: "Headless CMS Store",
+    title: "Voice AI Agent",
     category: "Web",
-    image: "https://placehold.co/600x400.png",
-    dataAiHint: "e-commerce product page",
-    description: "An e-commerce store with a custom headless CMS integration for a high-end fashion retailer. This provided their marketing team with unparalleled flexibility to manage content while delivering a lightning-fast shopping experience to customers.",
-    tools: ["Shopify Plus", "Next.js", "GraphQL", "Contentful"],
-    results: "Online sales grew by 60% year-over-year, and page load times were cut by 70%, improving both user experience and SEO rankings.",
-    link: "#",
+    image: "https://i.postimg.cc/CMB98brs/Screenshot-2025-08-10-at-7-13-41-PM.png",
+    dataAiHint: "voice ai agent",
+    description: "A sophisticated Voice AI Agent designed to provide real-time information and assistance. This project showcases our ability to build complex, interactive AI-powered applications with a seamless user experience.",
+    tools: ["Next.js", "Genkit", "Firebase", "AI/ML"],
+    results: "Successfully deployed a highly responsive and intelligent voice agent, capable of handling complex user queries with high accuracy and low latency.",
+    link: "https://f1-oracale-ai-438444544657.us-west1.run.app/",
   }
 ];
 
