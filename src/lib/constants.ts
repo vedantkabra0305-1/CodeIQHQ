@@ -52,7 +52,7 @@ export const portfolioProjects = [
   {
     id: 3,
     title: "E-commerce Redesign",
-    category: "UI/UX",
+    category: "Web",
     image: "https://i.postimg.cc/j214SZL1/Screenshot-2025-08-10-at-3-47-22-PM.png",
     dataAiHint: "e-commerce website",
     description: "Complete UI/UX redesign for a leading e-commerce brand. We conducted extensive user research to identify pain points and opportunities, resulting in a streamlined checkout process, improved product discovery, and a visually stunning interface.",
@@ -63,7 +63,7 @@ export const portfolioProjects = [
   {
     id: 4,
     title: "Voice AI Agent",
-    category: "Web",
+    category: "AI Agent",
     image: "https://i.postimg.cc/CMB98brs/Screenshot-2025-08-10-at-7-13-41-PM.png",
     dataAiHint: "voice ai agent",
     description: "A sophisticated Voice AI Agent designed to provide real-time information and assistance. This project showcases our ability to build complex, interactive AI-powered applications with a seamless user experience.",

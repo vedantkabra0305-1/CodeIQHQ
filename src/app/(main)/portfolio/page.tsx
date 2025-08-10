@@ -18,7 +18,7 @@ import { X, ExternalLink } from "lucide-react";
 
 type Project = typeof portfolioProjects[0];
 
-const categories = ["All", "Web", "Mobile", "UI/UX"];
+const categories = ["All", "Web", "Mobile", "AI Agent"];
 
 export default function PortfolioPage() {
   const [filter, setFilter] = useState("All");
