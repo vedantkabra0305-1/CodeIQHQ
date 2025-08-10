@@ -9,6 +9,13 @@ const serviceFeatures = {
   "AI Agents": ["Custom AI Agent Development", "LLM Integration", "Workflow Automation", "Intelligent Chatbots"],
 };
 
+const serviceImages: { [key: string]: string } = {
+  "Web Development": "https://i.postimg.cc/mZvv3RDn/Screenshot-2025-08-10-at-8-39-46-PM.png",
+  "Mobile App Development": "https://i.postimg.cc/9Qpsj7p3/Screenshot-2025-08-10-at-8-40-15-PM.png",
+  "AI Agents": "https://i.postimg.cc/sgyb8c59/Screenshot-2025-08-10-at-8-39-54-PM.png",
+};
+
+
 export default function ServicesPage() {
   return (
     <>
@@ -30,7 +37,7 @@ export default function ServicesPage() {
               <div className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'md:grid-flow-row-dense' : ''}`}>
                 <div className={`animate-fade-up ${index % 2 === 1 ? 'md:col-start-2' : ''}`} style={{ animationDelay: '100ms' }}>
                   <Image
-                    src={`https://placehold.co/600x450.png`}
+                    src={serviceImages[service.title as keyof typeof serviceImages]}
                     alt={service.title}
                     width={600}
                     height={450}

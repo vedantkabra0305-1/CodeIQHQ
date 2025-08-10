@@ -9,6 +9,12 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 
+const serviceImages: { [key: string]: string } = {
+  "Web Development": "https://i.postimg.cc/mZvv3RDn/Screenshot-2025-08-10-at-8-39-46-PM.png",
+  "Mobile App Development": "https://i.postimg.cc/9Qpsj7p3/Screenshot-2025-08-10-at-8-40-15-PM.png",
+  "AI Agents": "https://i.postimg.cc/sgyb8c59/Screenshot-2025-08-10-at-8-39-54-PM.png",
+};
+
 export default function ServicesOverview() {
   const [activeService, setActiveService] = useState(services[0]);
 
@@ -58,7 +64,7 @@ export default function ServicesOverview() {
                 )}
               >
                 <Image
-                  src={`https://placehold.co/600x400.png`}
+                  src={serviceImages[service.title]}
                   alt={service.title}
                   width={600}
                   height={400}
