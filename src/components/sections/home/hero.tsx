@@ -26,12 +26,12 @@ export default function HeroSection() {
           </div>
           <div className="animate-fade-up [animation-delay:200ms]">
             <Image 
-              src="https://placehold.co/600x400.png"
-              alt="Product illustration"
+              src="https://i.postimg.cc/hPWQxzq7/Screenshot-2025-08-10-at-8-32-41-PM.png"
+              alt="Laptop with CodeIQ logo"
               width={600}
               height={400}
               className="rounded-lg shadow-xl mx-auto"
-              data-ai-hint="product service illustration"
+              data-ai-hint="laptop code"
             />
           </div>
         </div>
