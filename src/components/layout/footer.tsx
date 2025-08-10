@@ -31,18 +31,20 @@ export default function Footer() {
           <div className="md:col-span-2">
              <h4 className="font-headline font-semibold mb-4">Connect</h4>
              <ul className="space-y-2">
-                <li>
-                  <a href={contactDetails.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                    <contactDetails.Icon className="h-5 w-5"/>
-                    Instagram
-                  </a>
-                </li>
+                {contactDetails.socials.map((social) => (
+                    <li key={social.name}>
+                        <a href={social.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                            <social.Icon className="h-5 w-5"/>
+                            {social.name}
+                        </a>
+                    </li>
+                ))}
              </ul>
           </div>
           <div className="flex flex-col gap-4 md:col-span-4">
             <h4 className="font-headline font-semibold">Get in Touch</h4>
             <p className="text-primary-foreground/70">
-              Have a project in mind? Let&apos;s talk about it.
+              Have a project in mind? Let's talk about it.
             </p>
             <Button variant="accent" asChild>
               <a href={`mailto:${contactDetails.email}`}>Contact Us</a>

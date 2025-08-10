@@ -1,4 +1,4 @@
-import { Monitor, TabletSmartphone, BrainCircuit, Instagram } from "lucide-react";
+import { Monitor, TabletSmartphone, BrainCircuit, Instagram, Linkedin } from "lucide-react";
 
 export const navLinks = [
   { href: "/", label: "Home" },
@@ -99,9 +99,20 @@ export const testimonials = [
 
 export const contactDetails = {
     email: "client.codeiq@gmail.com",
-    instagram: "https://www.instagram.com/CodeIQhq",
-    instagramHandle: "@CodeIQhq",
-    Icon: Instagram,
+    socials: [
+        {
+            name: "Instagram",
+            handle: "@CodeIQhq",
+            href: "https://www.instagram.com/CodeIQhq",
+            Icon: Instagram,
+        },
+        {
+            name: "LinkedIn",
+            handle: "CodeIQ",
+            href: "https://www.linkedin.com/company/codeiqhq/",
+            Icon: Linkedin
+        }
+    ]
 };
 
 export const aboutContent = {

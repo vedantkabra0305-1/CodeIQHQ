@@ -37,15 +37,17 @@ export default function ContactPage() {
                       <p className="text-muted-foreground group-hover:text-accent transition-colors">{contactDetails.email}</p>
                     </div>
                   </a>
-                   <a href={contactDetails.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
-                    <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center group-hover:bg-primary transition-colors">
-                       <Instagram className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-primary">Instagram</p>
-                      <p className="text-muted-foreground group-hover:text-accent transition-colors">{contactDetails.instagramHandle}</p>
-                    </div>
-                  </a>
+                  {contactDetails.socials.map((social) => (
+                    <a key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                      <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center group-hover:bg-primary transition-colors">
+                        <social.Icon className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary">{social.name}</p>
+                        <p className="text-muted-foreground group-hover:text-accent transition-colors">{social.handle}</p>
+                      </div>
+                    </a>
+                  ))}
                 </div>
               </div>
                <div>
