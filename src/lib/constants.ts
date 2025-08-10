@@ -120,20 +120,3 @@ export const aboutContent = {
   values: "We believe in transparency, continuous learning, and building long-term partnerships. Our core values guide every project, ensuring we deliver not just code, but value and trust.",
   story: "Founded in 2020 by a group of passionate developers and designers, CodeIQ started with a simple goal: to build software that makes a difference. Frustrated with the disconnect between client vision and developer execution, we set out to create an agency that prioritizes clear communication and a shared understanding of success. Today, we've helped dozens of startups and established companies launch products that users love.",
 };
-
-export const founders = [
-  {
-    name: "Alex Johnson",
-    title: "Co-Founder & CEO",
-    image: "https://placehold.co/400x400.png",
-    dataAiHint: "man ceo portrait",
-    bio: "With over 15 years in tech, Alex leads CodeIQ with a focus on strategy and client success. He's passionate about bridging the gap between business goals and technical execution."
-  },
-  {
-    name: "Samantha Lee",
-    title: "Co-Founder & CTO",
-    image: "https://placehold.co/400x400.png",
-    dataAiHint: "woman cto portrait",
-    bio: "Samantha is the technical powerhouse behind CodeIQ. She architects complex systems and leads our development team, ensuring we use the best technologies for the job."
-  }
-];

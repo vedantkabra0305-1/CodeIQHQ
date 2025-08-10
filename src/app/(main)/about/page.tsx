@@ -1,7 +1,28 @@
-import { aboutContent, founders } from "@/lib/constants";
-import Image from "next/image";
+import { aboutContent } from "@/lib/constants";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import CtaSection from "@/components/sections/cta";
+import { BrainCircuit, HeartHandshake, Users } from "lucide-react";
+
+const quotients = [
+  {
+    icon: BrainCircuit,
+    title: "Intellectual Quotient",
+    description: "We leverage cutting-edge technology and deep industry knowledge to build intelligent, high-performance digital solutions that solve real-world problems.",
+    delay: "100ms",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Emotional Quotient",
+    description: "We believe in building with empathy. Our design process focuses on creating intuitive and engaging user experiences that connect with people on a human level.",
+    delay: "200ms",
+  },
+  {
+    icon: Users,
+    title: "Social Quotient",
+    description: "Collaboration is at our core. We build strong partnerships with our clients and foster a community of open communication and shared success.",
+    delay: "300ms",
+  },
+];
 
 export default function AboutPage() {
   return (
@@ -13,6 +34,30 @@ export default function AboutPage() {
             <p className="mt-4 text-xl text-muted-foreground">
               We&apos;re a team of passionate creators dedicated to building exceptional digital experiences.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-0">
+        <div className="container">
+           <div className="grid md:grid-cols-3 gap-8">
+            {quotients.map((item) => (
+              <Card 
+                key={item.title} 
+                className="text-center animate-fade-up"
+                style={{ animationDelay: item.delay }}
+              >
+                <CardHeader className="items-center">
+                   <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mb-4">
+                     <item.icon className="w-8 h-8" />
+                   </div>
+                  <CardTitle className="font-headline text-2xl">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -32,42 +77,6 @@ export default function AboutPage() {
               <h2 className="font-headline text-2xl font-bold mb-4 text-primary">Our Story</h2>
               <p className="text-muted-foreground">{aboutContent.story}</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Meet Our Founders</h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              The leaders guiding our mission to deliver excellence.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {founders.map((founder, index) => (
-              <Card 
-                key={founder.name} 
-                className="text-center animate-fade-up overflow-hidden"
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                <CardHeader>
-                  <Image
-                    src={founder.image}
-                    alt={founder.name}
-                    width={150}
-                    height={150}
-                    className="rounded-full mx-auto mb-4 shadow-lg"
-                    data-ai-hint={founder.dataAiHint}
-                  />
-                  <CardTitle className="font-headline text-2xl">{founder.name}</CardTitle>
-                  <p className="text-accent font-semibold">{founder.title}</p>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{founder.bio}</p>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
