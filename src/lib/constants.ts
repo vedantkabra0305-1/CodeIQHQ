@@ -29,14 +29,14 @@ export const services = [
 export const portfolioProjects = [
   {
     id: 1,
-    title: "Fintech Dashboard",
+    title: "Agent Dashboard",
     category: "Web",
     image: "https://placehold.co/600x400.png",
-    dataAiHint: "modern dashboard",
+    dataAiHint: "agent dashboard",
     description: "A comprehensive web platform for data analytics for a leading fintech company. We delivered a fully responsive, real-time dashboard that allows users to visualize complex financial data with ease. The project involved a custom design system to ensure brand consistency.",
     tools: ["Next.js", "TypeScript", "Tailwind CSS", "Recharts", "Firebase"],
     results: "Increased user engagement by 40% and reduced data processing time by half. The new platform has become an indispensable tool for their financial analysis team.",
-    link: "#",
+    link: "https://subtle-gingersnap-49c6a3.netlify.app/",
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ export const portfolioProjects = [
     title: "E-commerce Redesign",
     category: "UI/UX",
     image: "https://placehold.co/600x400.png",
-    dataAiHint: "website wireframe",
+    dataAiHint: "e-commerce website",
     description: "Complete UI/UX redesign for a leading e-commerce brand. We conducted extensive user research to identify pain points and opportunities, resulting in a streamlined checkout process, improved product discovery, and a visually stunning interface.",
     tools: ["Figma", "Adobe XD", "UserTesting.com", "Hotjar"],
     results: "Resulted in a 25% increase in conversion rate and a significant drop in cart abandonment, directly impacting the client's bottom line.",
