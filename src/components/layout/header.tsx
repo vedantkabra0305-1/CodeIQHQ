@@ -33,7 +33,7 @@ export default function Header() {
           ))}
         </nav>
         <div className="hidden items-center gap-4 md:flex">
-          <Button asChild>
+          <Button asChild className="transform hover:scale-105 transition-transform">
             <Link href="/contact">Get a Quote</Link>
           </Button>
         </div>

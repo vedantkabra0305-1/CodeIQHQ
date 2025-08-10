@@ -17,7 +17,7 @@ export default function ContactPage() {
       <section className="py-0">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-secondary p-8 rounded-lg animate-fade-up" style={{animationDelay: '100ms'}}>
+            <div className="bg-secondary p-8 rounded-lg animate-fade-up transition-all duration-300 hover:shadow-xl" style={{animationDelay: '100ms'}}>
               <h2 className="font-headline text-2xl font-bold text-primary mb-6">Send us a message</h2>
               <ContactForm />
             </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                 <p className="text-muted-foreground mb-4">
                   While we work with clients globally, our headquarters is based in San Francisco.
                 </p>
-                <div className="aspect-video w-full rounded-lg overflow-hidden">
+                <div className="aspect-video w-full rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                    <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.490592751532!2d-122.4217204236965!3d37.77926497197829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809f6b925821%3A0x28636e1b6016e133!2sSalesforce%20Tower!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                     width="100%"
