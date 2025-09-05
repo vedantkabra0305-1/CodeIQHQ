@@ -3,6 +3,7 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
+  distDir: 'dist',
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -38,7 +39,6 @@ const nextConfig = {
       }
     ],
   },
-  distDir: 'out',
 };
 
 module.exports = nextConfig;
