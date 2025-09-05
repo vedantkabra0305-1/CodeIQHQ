@@ -1,8 +1,10 @@
 import type {Metadata} from 'next';
+import dynamic from 'next/dynamic';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from '@/lib/utils';
-import { Splash } from '@/components/shared/splash';
+
+const Splash = dynamic(() => import('@/components/shared/splash').then((mod) => ({ default: mod.Splash })), { ssr: false });
 
 export const metadata: Metadata = {
   title: 'CodeIQ Digital Agency',
