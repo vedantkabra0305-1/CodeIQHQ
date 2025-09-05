@@ -26,6 +26,12 @@ const nextConfig = {
         hostname: 'images.pexels.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'pasteboard.co',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
