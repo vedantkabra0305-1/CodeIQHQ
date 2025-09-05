@@ -25,7 +25,7 @@ export function SplashScreen({ onComplete }: { onComplete: () => void }) {
     >
       <div className="animate-pulse">
         <Image
-          src="https://i.postimg.cc/5Nvyxz34/Screenshot-2025-09-05-at-4-26-08-PM.png"
+          src="https://i.postimg.cc/NfGCt8YT/Screenshot-2025-09-05-at-5-59-36-PM.png"
           alt="CodeIQ"
           width={200}
           height={80}
