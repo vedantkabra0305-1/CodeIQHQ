@@ -12,12 +12,9 @@ export default function MainLayout({
 }>) {
   const [showSplash, setShowSplash] = useState(true);
 
-  if (showSplash) {
-    return <SplashScreen onComplete={() => setShowSplash(false)} />;
-  }
-
   return (
     <div className="flex min-h-screen flex-col">
+      {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
       <Header />
       <main className="flex-1">{children}</main>
       <Footer />
