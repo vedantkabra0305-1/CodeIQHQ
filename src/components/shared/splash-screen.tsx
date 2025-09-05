@@ -4,25 +4,21 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-export function SplashScreen({ onComplete }: { onComplete: () => void }) {
+export function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);
-      setTimeout(onComplete, 500); // Wait for fade out animation
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, [onComplete]);
+  }, []);
+
+  if (!isVisible) return null;
 
   return (
-    <div
-      className={cn(
-        "fixed inset-0 z-50 flex items-center justify-center bg-background transition-opacity duration-500",
-        isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
-      )}
-    >
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-background">
       <div className="animate-pulse">
         <Image
           src="https://i.postimg.cc/NfGCt8YT/Screenshot-2025-09-05-at-5-59-36-PM.png"
