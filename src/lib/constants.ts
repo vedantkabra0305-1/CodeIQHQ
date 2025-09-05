@@ -66,22 +66,22 @@ export const testimonials = [
   {
     quote: "CodeIQ transformed our vision into a reality. Their team is professional, skilled, and incredibly easy to work with. The final product exceeded all our expectations.",
     name: "Jane Doe",
-    title: "CEO, Innovate Inc.",
-    avatar: "https://placehold.co/100x100.png",
+    title: "Client",
+    avatar: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
     dataAiHint: "woman professional portrait",
   },
   {
     quote: "The level of detail and commitment from CodeIQ was outstanding. They are true partners in development, not just a vendor.",
     name: "John Smith",
-    title: "CTO, Tech Solutions",
-    avatar: "https://placehold.co/100x100.png",
+    title: "Client",
+    avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
     dataAiHint: "man professional portrait",
   },
   {
     quote: "From UI/UX to deployment, every step was handled with expertise. We couldn't be happier with our new mobile app.",
     name: "Emily White",
-    title: "Product Manager, MobileFirst",
-    avatar: "https://placehold.co/100x100.png",
+    title: "Client",
+    avatar: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
     dataAiHint: "woman smiling",
   },
 ];
