@@ -17,7 +17,7 @@ export function SplashScreen({ onComplete }: { onComplete: () => void }) {
   }, [onComplete]);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 backdrop-blur-sm">
+    <div
       className={cn(
         "fixed inset-0 z-50 flex items-center justify-center bg-background transition-opacity duration-500",
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
