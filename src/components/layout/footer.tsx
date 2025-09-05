@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid gap-8 md:grid-cols-12">
           <div className="flex flex-col gap-4 md:col-span-4">
-            <Logo className="[&>span]:text-primary-foreground" />
+            <Logo />
             <p className="text-primary-foreground/70">
               Building the future, one line of code at a time.
             </p>

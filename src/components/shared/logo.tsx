@@ -1,14 +1,17 @@
 import Link from "next/link";
-import { Code } from "lucide-react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 export function Logo({ className }: { className?: string }) {
   return (
     <Link href="/" className={cn("flex items-center gap-2", className)}>
-      <Code className="h-6 w-6 text-accent" />
-      <span className="text-xl font-bold font-headline text-primary">
-        CodeIQ
-      </span>
+      <Image 
+        src="/codeiq-logo.png" 
+        alt="CodeIQ Logo" 
+        width={120} 
+        height={40}
+        className="h-8 w-auto"
+      />
     </Link>
   );
 }
