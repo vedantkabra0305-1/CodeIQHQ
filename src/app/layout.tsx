@@ -1,10 +1,7 @@
 import type {Metadata} from 'next';
-import dynamic from 'next/dynamic';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from '@/lib/utils';
-
-const Splash = dynamic(() => import('@/components/shared/splash').then((mod) => ({ default: mod.Splash })), { ssr: false });
 
 export const metadata: Metadata = {
   title: 'CodeIQ Digital Agency',
@@ -24,7 +21,6 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body className={cn("font-body antialiased")}>
-        <Splash />
         {children}
         <Toaster />
       </body>
