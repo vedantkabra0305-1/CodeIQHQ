@@ -2,18 +2,24 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 
 export function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
     const timer = setTimeout(() => {
       setIsVisible(false);
     }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
+
+  // Don't render anything on server
+  if (!isMounted) {
+    return null;
+  }
 
   if (!isVisible) return null;
 
@@ -26,6 +32,7 @@ export function SplashScreen() {
           width={200}
           height={80}
           className="h-16 w-auto"
+          priority
         />
       </div>
     </div>

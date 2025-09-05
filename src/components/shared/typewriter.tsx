@@ -17,14 +17,14 @@ export function Typewriter({
   cursorClassName,
 }: TypewriterProps) {
   const [displayedText, setDisplayedText] = useState("");
-  const [isClient, setIsClient] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
+    setIsMounted(true);
   }, []);
 
   useEffect(() => {
-    if (!isClient) return;
+    if (!isMounted) return;
 
     let i = 0;
     const intervalId = setInterval(() => {
@@ -36,10 +36,11 @@ export function Typewriter({
     }, speed);
 
     return () => clearInterval(intervalId);
-  }, [isClient, text, speed]);
+  }, [isMounted, text, speed]);
 
-  if (!isClient) {
-    return <span className={className}>{text}<span className={cn("animate-pulse opacity-0", cursorClassName)}>|</span></span>;
+  // Show full text on server and before hydration
+  if (!isMounted) {
+    return <span className={className}>{text}</span>;
   }
 
   return (
