@@ -40,17 +40,6 @@ export const portfolioProjects = [
   },
   {
     id: 2,
-    title: "ConnectApp",
-    category: "Mobile",
-    image: "https://placehold.co/600x400.png",
-    dataAiHint: "mobile app screen",
-    description: "A cross-platform mobile app for social networking. Features real-time chat, media sharing, and a sophisticated recommendation engine. Built to scale and handle thousands of concurrent users, providing a smooth and reliable social experience.",
-    tools: ["React Native", "Firebase", "Redux Toolkit", "Node.js"],
-    results: "Achieved 100,000+ downloads in the first three months on both App Store and Google Play, with an average rating of 4.8 stars.",
-    link: "#",
-  },
-  {
-    id: 3,
     title: "E-commerce Redesign",
     category: "Web",
     image: "https://i.postimg.cc/j214SZL1/Screenshot-2025-08-10-at-3-47-22-PM.png",
@@ -61,7 +50,7 @@ export const portfolioProjects = [
     link: "https://redemp.in/",
   },
   {
-    id: 4,
+    id: 3,
     title: "Voice AI Agent",
     category: "AI Agent",
     image: "https://i.postimg.cc/CMB98brs/Screenshot-2025-08-10-at-7-13-41-PM.png",

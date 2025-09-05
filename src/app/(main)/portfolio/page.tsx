@@ -119,7 +119,7 @@ export default function PortfolioPage() {
                 </div>
                 <Button asChild>
                   <a href={selectedProject.link} target="_blank" rel="noopener noreferrer">
-                    View Live Project <ExternalLink className="ml-2 h-4 w-4" />
+                    Learn More <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
               </div>

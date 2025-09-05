@@ -42,11 +42,6 @@ export default function PortfolioOverview() {
             </Link>
           ))}
         </div>
-        <div className="text-center mt-12">
-          <Button asChild size="lg">
-            <Link href="/portfolio">View All Projects</Link>
-          </Button>
-        </div>
       </div>
     </section>
   );

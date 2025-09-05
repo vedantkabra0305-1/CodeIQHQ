@@ -50,24 +50,6 @@ export default function ContactPage() {
                   ))}
                 </div>
               </div>
-               <div>
-                <h3 className="font-headline text-2xl font-bold text-primary mb-4">Our Location</h3>
-                <p className="text-muted-foreground mb-4">
-                  While we work with clients globally, our headquarters is based in Mumbai.
-                </p>
-                <div className="aspect-video w-full rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609801388!2d72.74109713631994!3d19.082522326622812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1700000000001!5m2!1sen!2sus"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen={false}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Google Map of Mumbai"
-                  ></iframe>
-                </div>
-              </div>
             </div>
           </div>
         </div>
