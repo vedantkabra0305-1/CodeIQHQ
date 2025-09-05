@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 export function SplashScreen({ onComplete }: { onComplete: () => void }) {
@@ -24,13 +23,15 @@ export function SplashScreen({ onComplete }: { onComplete: () => void }) {
       )}
     >
       <div className="animate-pulse">
-        <Image 
-          src="/codeiq-logo.png" 
-          alt="CodeIQ Logo" 
-          width={200} 
-          height={80}
-          className="h-16 w-auto"
-        />
+        <div className="flex items-center gap-4">
+          <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center">
+            <svg viewBox="0 0 24 24" className="w-10 h-10 text-primary-foreground" fill="currentColor">
+              <path d="M8.5 8.5L12 12l3.5-3.5L16 9l-4 4-4-4z"/>
+              <path d="M8 3v2H6v2H4v2H2v2h2v2h2v2h2v2h8v-2h2v-2h2v-2h2v-2h-2V9h-2V7h-2V5h-2V3H8z"/>
+            </svg>
+          </div>
+          <span className="font-headline text-4xl font-bold text-primary">CodeIQ</span>
+        </div>
       </div>
     </div>
   );
