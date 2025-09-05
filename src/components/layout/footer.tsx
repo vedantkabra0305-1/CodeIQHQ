@@ -9,9 +9,7 @@ export default function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid gap-8 md:grid-cols-12">
           <div className="flex flex-col gap-4 md:col-span-4">
-            <Link href="/" className="flex items-center gap-2">
-              <Logo className="[&>span]:text-primary-foreground" />
-            </Link>
+            <Logo className="[&>span]:text-primary-foreground" />
             <p className="text-primary-foreground/70">
               Building the future, one line of code at a time.
             </p>
