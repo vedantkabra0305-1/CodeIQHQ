@@ -40,6 +40,17 @@ export const portfolioProjects = [
   },
   {
     id: 2,
+    title: "Dubkie Travel and Experience",
+    category: "Web",
+    image: "https://i.postimg.cc/bZ0HqPMV/Screenshot-2025-09-10-at-9-27-20-PM.png",
+    dataAiHint: "travel website",
+    description: "A comprehensive travel and experience platform that connects travelers with unique local experiences. We built a modern, responsive website with intuitive navigation, stunning visuals, and seamless booking functionality.",
+    tools: ["React", "Next.js", "Tailwind CSS", "Stripe", "Firebase"],
+    results: "Created an engaging platform that increased booking conversions by 35% and provided travelers with an intuitive way to discover and book authentic local experiences.",
+    link: "https://dulcet-cendol-627dac.netlify.app/#programs",
+  },
+  {
+    id: 3,
     title: "E-commerce Redesign",
     category: "Web",
     image: "https://i.postimg.cc/j214SZL1/Screenshot-2025-08-10-at-3-47-22-PM.png",
@@ -50,7 +61,7 @@ export const portfolioProjects = [
     link: "https://redemp.in/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Voice AI Agent",
     category: "AI Agent",
     image: "https://i.postimg.cc/CMB98brs/Screenshot-2025-08-10-at-7-13-41-PM.png",
@@ -59,6 +70,17 @@ export const portfolioProjects = [
     tools: ["Next.js", "Genkit", "Firebase", "AI/ML"],
     results: "Successfully deployed a highly responsive and intelligent voice agent, capable of handling complex user queries with high accuracy and low latency.",
     link: "https://f1-oracale-ai-438444544657.us-west1.run.app/",
+  },
+  {
+    id: 5,
+    title: "AI Renewable Energy Consultant",
+    category: "AI Agent",
+    image: "https://i.postimg.cc/QMBdwS55/Screenshot-2025-09-10-at-9-27-20-PM.png",
+    dataAiHint: "renewable energy ai consultant",
+    description: "An intelligent AI consultant specializing in renewable energy solutions for Australian businesses. This advanced system provides personalized recommendations, cost analysis, and implementation strategies for sustainable energy transitions.",
+    tools: ["Python", "OpenAI", "Streamlit", "Google Cloud", "AI/ML"],
+    results: "Delivered expert-level renewable energy consulting through AI, helping businesses reduce energy costs by up to 40% while transitioning to sustainable solutions.",
+    link: "https://renewable-energy-sales-chatbot-australia-b2b-506062928176.us-west1.run.app/",
   }
 ];
 
