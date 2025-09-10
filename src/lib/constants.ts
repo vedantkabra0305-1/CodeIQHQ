@@ -26,6 +26,12 @@ export const services = [
   },
 ];
 
+const serviceImages: { [key: string]: string } = {
+  "Web Development": "https://i.postimg.cc/bZ0HqPMV/Screenshot-2025-09-10-at-9-27-20-PM.png",
+  "Mobile App Development": "https://i.postimg.cc/9Qpsj7p3/Screenshot-2025-08-10-at-8-40-15-PM.png", 
+  "AI Agents": "https://i.postimg.cc/QMBdwS55/Screenshot-2025-09-10-at-9-27-20-PM.png",
+};
+
 export const portfolioProjects = [
   {
     id: 1,
